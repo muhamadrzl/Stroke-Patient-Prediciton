@@ -14,7 +14,7 @@ You can download dataset in Kaggle.com
 
 # STEP 3: Clean your dataset
 
-Cleaning data means to clean the data from typos or removing outliers if exist and any job to make the data is more understandable by the machine to model. Of course machine only understands data if it is in numerical form. We can see it further how to transform the categorical value into numerical value. First we have to take a look to see what happens in our data
+Cleaning data means to clean the data from typos or to remove outliers if they exist and any job to make the data is more understandable by the machine. Of course machine only understands data if it is in numerical form. We can see it further how to transform the categorical value into numerical value. First we have to take a look to see what happens in our data
 
 ![image](https://user-images.githubusercontent.com/84617244/145662295-4c77f04b-eca9-45e3-ac80-cd4bac82d622.png)
 
@@ -91,7 +91,33 @@ WHY? Because we don't want our testing dataset is leaked from anything, free fro
 
 ![image](https://user-images.githubusercontent.com/84617244/145678709-3e8a63ed-16d6-4fbd-b1c1-b73115c2d1cc.png)
 
-# STEP 8 : Feeding the training data into the ML algorithm
+# STEP 8 : Scaling the data
+
+It is important to note that scaling the data is necessary to perform, because some of ML models require scaling especially for the algorithm which employs distance measurement, such as KNN, it will have high-chance to influence the ML performance. Thus, it is mandatory to perform this step.
+
+![image](https://user-images.githubusercontent.com/84617244/145679467-9deeb1ce-aa40-4924-969e-e5b7b05a0d60.png)
+
+![image](https://user-images.githubusercontent.com/84617244/145679490-2870d736-6ab7-4716-af76-5e887e242c59.png)
+
+# STEP 9 : Feeding the training data into the ML algorithm
+
+After we do all the 8 prior steps, we can now feed the data into the ML algoithm. I use 7 algorithm models logistic regression, SVM, Decision Tree, Random Forest, KNN, XGBoost, 
+Adaboost. Therefore, we can easily code to use all those algorithms.
+
+![image](https://user-images.githubusercontent.com/84617244/145679842-e688d306-2438-47bd-8757-5b340ccf85e6.png)
+
+and this is how we perform validation test.
+
+![image](https://user-images.githubusercontent.com/84617244/145679889-0d86ff45-2786-4fa4-bf33-503485341b91.png)
+
+VOILA!!! Our accuracy score is all 1.0 which means we got 100% correct for predicting stroke and non-stroke group of people.
+We can also see the confusion matrix from the above models.
+
+![image](https://user-images.githubusercontent.com/84617244/145680098-99dd131f-16b2-42d4-a663-4b6fb35b1fd5.png)
+
+
+
+
 
 
 
